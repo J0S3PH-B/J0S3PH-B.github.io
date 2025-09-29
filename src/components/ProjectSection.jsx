@@ -1,12 +1,12 @@
-const projects = [
-    {
+// const projects = [
+//     {
 
-    },
-    {
+//     },
+//     {
 
-    },
+//     },
     
-]
+// ]
 
 export const Projects = () => {
     return (
