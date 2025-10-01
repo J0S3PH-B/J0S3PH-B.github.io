@@ -3,23 +3,23 @@ import { cn } from "@/lib/utils";
 
 const Skills = [
     //frontend
-    {name: "HTML/CSS", Level: "65", category: "frontend"},
-    {name: "JavaScript", Level: "50", category: "frontend"},
-    {name: "Tailwind CSS", Level: "60", category: "frontend"},
-    {name: "React", Level: "45", category: "frontend"},
-    {name: "Flutter", Level: "50", category: "frontend"},
+    {name: "HTML/CSS", category: "frontend", src: ""},
+    {name: "JavaScript", category: "frontend", src: ""},
+    {name: "Tailwind CSS", category: "frontend", src: ""},
+    {name: "React", category: "frontend", src: ""},
+    {name: "Flutter", category: "frontend", src: ""},
 
     //backend
-    {name: "Node.Js", Level: "45", category: "backend"},
-    {name: "MySQL", Level: "95", category: "backkend"},
-    {name: "Python", Level: "70", category: "backend"},
-    {name: "Java", Level: "55", category: "backend"},
+    {name: "Node.Js", category: "backend", src: ""},
+    {name: "MySQL", category: "backkend", src: ""},
+    {name: "Python", category: "backend", src: ""},
+    {name: "Java", category: "backend", src: ""},
 
     //tools
-    {name: "Git/GitHub", Level: "80", category: "tools"},
-    {name: "Excel", Level: "95", category: "tools"},
-    {name: "Figma", Level: "95", category: "tools"},
-    {name: "VS Code", Level: "80", category: "tools"}
+    {name: "Git/GitHub", category: "tools", src: ""},
+    {name: "Excel", category: "tools", src: ""},
+    {name: "Figma", category: "tools", src: ""},
+    {name: "VS Code", category: "tools", src: ""}
 ]
 
 const cat = ["all", "frontend", "backend", "tools"]
@@ -67,15 +67,6 @@ export const SkillSection = () =>{
                             <div className="text-left mb-4">
                                 <h3 className="font-semi-bold text-lg"> {skill.name} </h3>
                             </div>    
-
-                            <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                                <div className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out"
-                                style={{width: skill.Level + "%"}}/>
-                            </div>
-
-                            <div className="text-right mt-1">
-                                <span className="text-sm text-muted-foreground"> {skill.Level}% </span>
-                            </div>
                         </div>
                     ))}
 
